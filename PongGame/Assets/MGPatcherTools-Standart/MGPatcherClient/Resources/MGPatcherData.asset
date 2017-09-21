@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1113324839, guid: b10dbc3a9c451e24987cc7d7bc702a0a, type: 3}
+  m_Name: MGPatcherData
+  m_EditorClassIdentifier: 
+  currentVersion: 1.0.1
+  versionUrl: http://host/Win/x86/
+  patchesUrl: http://host/Win/x86/
+  gameName: 
+  formatPatchName: .patch
+  directUpdate: 0
+  indexStartScene: 0

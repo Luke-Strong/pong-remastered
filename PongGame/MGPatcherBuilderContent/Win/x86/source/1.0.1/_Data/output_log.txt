@@ -1,0 +1,49 @@
+Initialize engine version: 2017.1.0f3 (472613c02cf7)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) HD Graphics 5000 (ID=0xa26)
+    Vendor:   Intel
+    VRAM:     1136 MB
+    Driver:   20.19.15.4568
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Program Files\Unity\Projects\PongGame\MGPatcherBuilderContent\Win\x86\source\1.0.1\_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Program Files\Unity\Projects\PongGame\MGPatcherBuilderContent\Win\x86\source\1.0.1\_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Program Files\Unity\Projects\PongGame\MGPatcherBuilderContent\Win\x86\source\1.0.1\_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Program Files\Unity\Projects\PongGame\MGPatcherBuilderContent\Win\x86\source\1.0.1\_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Program Files\Unity\Projects\PongGame\MGPatcherBuilderContent\Win\x86\source\1.0.1\_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Program Files\Unity\Projects\PongGame\MGPatcherBuilderContent\Win\x86\source\1.0.1\_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Program Files\Unity\Projects\PongGame\MGPatcherBuilderContent\Win\x86\source\1.0.1\_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Program Files\Unity\Projects\PongGame\MGPatcherBuilderContent\Win\x86\source\1.0.1\_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Program Files\Unity\Projects\PongGame\MGPatcherBuilderContent\Win\x86\source\1.0.1\_Data\Managed\UnityEngine.Timeline.dll (this message is harmless)
+Loading C:\Program Files\Unity\Projects\PongGame\MGPatcherBuilderContent\Win\x86\source\1.0.1\_Data\Managed\UnityEngine.Timeline.dll into Unity Child Domain
+Platform assembly: C:\Program Files\Unity\Projects\PongGame\MGPatcherBuilderContent\Win\x86\source\1.0.1\_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading C:\Program Files\Unity\Projects\PongGame\MGPatcherBuilderContent\Win\x86\source\1.0.1\_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+Platform assembly: C:\Program Files\Unity\Projects\PongGame\MGPatcherBuilderContent\Win\x86\source\1.0.1\_Data\Managed\RsyncNet.dll (this message is harmless)
+Loading C:\Program Files\Unity\Projects\PongGame\MGPatcherBuilderContent\Win\x86\source\1.0.1\_Data\Managed\RsyncNet.dll into Unity Child Domain
+Platform assembly: C:\Program Files\Unity\Projects\PongGame\MGPatcherBuilderContent\Win\x86\source\1.0.1\_Data\Managed\ICSharpCode.SharpZipLib.dll (this message is harmless)
+Loading C:\Program Files\Unity\Projects\PongGame\MGPatcherBuilderContent\Win\x86\source\1.0.1\_Data\Managed\ICSharpCode.SharpZipLib.dll into Unity Child Domain
+Platform assembly: C:\Program Files\Unity\Projects\PongGame\MGPatcherBuilderContent\Win\x86\source\1.0.1\_Data\Managed\MGPatcherToolsLib.dll (this message is harmless)
+Loading C:\Program Files\Unity\Projects\PongGame\MGPatcherBuilderContent\Win\x86\source\1.0.1\_Data\Managed\MGPatcherToolsLib.dll into Unity Child Domain
+Platform assembly: C:\Program Files\Unity\Projects\PongGame\MGPatcherBuilderContent\Win\x86\source\1.0.1\_Data\Managed\System.dll (this message is harmless)
+Platform assembly: C:\Program Files\Unity\Projects\PongGame\MGPatcherBuilderContent\Win\x86\source\1.0.1\_Data\Managed\System.Core.dll (this message is harmless)
+- Completed reload, in  0.023 seconds
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 4.372777 ms
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.862595 ms
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 346.
+Total: 0.991115 ms (FindLiveObjects: 0.045070 ms CreateObjectMapping: 0.027221 ms MarkObjects: 0.136105 ms  DeleteObjects: 0.781825 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.520324 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 392.
+Total: 0.224462 ms (FindLiveObjects: 0.048640 ms CreateObjectMapping: 0.037484 ms MarkObjects: 0.131196 ms  DeleteObjects: 0.006693 ms)
+
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 1698 -> priority: 1 
+  Thread -> id: 1c54 -> priority: 1 

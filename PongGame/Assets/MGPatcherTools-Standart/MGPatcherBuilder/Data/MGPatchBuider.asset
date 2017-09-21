@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1645202643, guid: 72ac4a6f68b456746a6bd1fbaa73e2ae, type: 3}
+  m_Name: MGPatchBuider
+  m_EditorClassIdentifier: 
+  platforms:
+  - {fileID: 114969482066485372}
+  platformCounts: 0100000000000000000000000000000000000000000000000000000000000000
+  optionCreate: 1
+  settings: {fileID: 114000010352709034}
+--- !u!114 &114000010352709034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1825516229, guid: 72ac4a6f68b456746a6bd1fbaa73e2ae, type: 3}
+  m_Name: MGPatchBuider
+  m_EditorClassIdentifier: 
+  autoUpload: 1
+  advancedSettings: 1
+  hostHttp: http://host/
+  patchFormat: .patch
+  hostFTP: ftp.host.com:21
+  userFTP: user
+  passFTP: 123
+  creatingBlockSize: 4096
+  uploadBlockSize: 1024
+  zipLevel: 9
+  language: 0
+  deletePDB: 1
+--- !u!114 &114969482066485372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1771230620, guid: 72ac4a6f68b456746a6bd1fbaa73e2ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  show: 0
+  gameName: 
+  pathVersion: Win/x86/
+  pathPatches: Win/x86/
+  sourceFolder: C:/Program Files/Unity/Projects/PongGame/MGPatcherBuilderContent/Win/x86/source
+  patchFolder: C:/Program Files/Unity/Projects/PongGame/MGPatcherBuilderContent/Win/x86/patches
+  pathBuid: C:/Program Files/Unity/Projects/PongGame/MGPatcherBuilderContent/Win/x86/Build
+  addVersion: 
+  indexStartScene: 0
+  patchDone: 0
+  filesUpload:
+  - C:/Program Files/Unity/Projects/PongGame/MGPatcherBuilderContent/Win/x86/patches/version
+  versions:
+  - 1.0.1
+  platformName: 
+  platformDir: 
