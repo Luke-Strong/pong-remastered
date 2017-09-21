@@ -1245,7 +1245,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95d77b9d9bd81cc47872f09d6e2b7ba6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 7.7
+  speed: 11
   enemyBlip2: {fileID: 8300000, guid: af6c654453de9954cb6a6ba557e465e1, type: 3}
   SFXSource: {fileID: 705879268}
 --- !u!82 &705879268

@@ -18,8 +18,8 @@ public class Ball : MonoBehaviour {
 	void Update ()
 	{
 
-		if ( (Input.GetMouseButton (0) == true || Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Return))
-			&& isPlay == false && gameObject.transform.position.x == -20) {
+		if ( ((Input.GetMouseButton (0) == true || Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Return) || gameObject.transform.position.x != -20 ))
+			&& isPlay == false && gameObject.transform.position.x == -20 ) {
 
 			transform.parent = null;
 			isPlay = true;
@@ -34,9 +34,6 @@ public class Ball : MonoBehaviour {
 			}
 		}
 
-		if (gameObject.transform.position.x != -20)
-			transform.parent = null;
-		
 		Vector3 unit = GetComponent<Rigidbody>().velocity.normalized;
 		GetComponent<Rigidbody>().velocity = unit * 45;
 
