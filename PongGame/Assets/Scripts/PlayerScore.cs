@@ -40,7 +40,7 @@ public class PlayerScore : MonoBehaviour {
 		{
 			Destroy (ball);
 
-			playerPoints += 1;
+			playerPoints += 3;
 			turn += 1;
 
 			checkWinner (); //Has the player accrued 10 points and won?

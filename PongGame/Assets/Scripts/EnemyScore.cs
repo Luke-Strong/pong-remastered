@@ -42,7 +42,7 @@ public class EnemyScore : MonoBehaviour {
 
 			Destroy (ball);
 
-			enemyPoints += 1;
+			enemyPoints += 3;
 			PlayerScore.turn += 1;
 
 		
