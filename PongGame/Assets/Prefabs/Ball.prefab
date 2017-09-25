@@ -82,6 +82,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ballVelocity: 1200
+  rb: {fileID: 0}
 --- !u!212 &212781048423862384
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -531,6 +531,7 @@ MonoBehaviour:
   paddleSpeed: 1
   playerPos: {x: 0, y: 0, z: 0}
   playerBlip: {fileID: 8300000, guid: 9e05df993999bd240969bbccb74e4dbd, type: 3}
+  redBallCollision: {fileID: 8300000, guid: 37b687638515a814abd0ad664d8b47df, type: 3}
   SFXSource: {fileID: 204305280}
 --- !u!54 &204305278
 Rigidbody:
@@ -553,7 +554,7 @@ BoxCollider:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 204305274}
-  m_Material: {fileID: 13400000, guid: 6901d3a614d6b0246960a5c6d30706b3, type: 2}
+  m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -2487,6 +2488,22 @@ Prefab:
     - target: {fileID: 4498569996880246, guid: 2bffb48e932f35e47a8ec61054bbfe82, type: 2}
       propertyPath: m_LocalScale.x
       value: 1.1833811
+      objectReference: {fileID: 0}
+    - target: {fileID: 54761181074007306, guid: 2bffb48e932f35e47a8ec61054bbfe82,
+        type: 2}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 65357333920568128, guid: 2bffb48e932f35e47a8ec61054bbfe82,
+        type: 2}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 6901d3a614d6b0246960a5c6d30706b3,
+        type: 2}
+    - target: {fileID: 114990203090571982, guid: 2bffb48e932f35e47a8ec61054bbfe82,
+        type: 2}
+      propertyPath: ballVelocity
+      value: 1200
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2bffb48e932f35e47a8ec61054bbfe82, type: 2}

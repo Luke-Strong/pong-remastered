@@ -12,6 +12,8 @@ TagManager:
   - PlayerWall
   - Enemy
   - Paddle
+  - Survival
+  - Standard
   layers:
   - Default
   - TransparentFX

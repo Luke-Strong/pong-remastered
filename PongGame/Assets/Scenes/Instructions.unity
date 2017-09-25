@@ -747,8 +747,8 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 696069135}
-  m_Text: "RED GUY: KEEP AWAY! \nYOU LOSE ONE POINT\n IF YOU MAKE CONTACT\n WITH THIS
-    BALL."
+  m_Text: "RED BALL: KEEP AWAY! \nYOU LOSE ONE POINT\n IF YOU MAKE CONTACT\n WITH
+    THIS BALL."
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
@@ -1211,7 +1211,7 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1365949860}
-  m_Text: "WHITE BALL: ONE \nPOINT IF THE OTHER\n PLAYER LETS\n THIS BALL THROUGH."
+  m_Text: "WHITE BALL: THREE \nPOINTS IF THE OTHER\n PLAYER LETS\n THIS BALL THROUGH."
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1

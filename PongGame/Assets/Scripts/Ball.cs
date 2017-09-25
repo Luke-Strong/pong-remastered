@@ -5,7 +5,7 @@ using UnityEngine;
 public class Ball : MonoBehaviour {
 
 	public float ballVelocity = 1300;
-    Rigidbody rb;
+    public Rigidbody rb;
 	bool isPlay = false;
 	int randInt;
 
@@ -18,10 +18,16 @@ public class Ball : MonoBehaviour {
 	void Update ()
 	{
 
-		if ( ((Input.GetMouseButton (0) == true || Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Return) || gameObject.transform.position.x != -20 ))
-			&& isPlay == false && gameObject.transform.position.x == -20 ) {
+		if (gameObject.transform.position.x == -20 && isPlay == false)
+			rb.isKinematic = true;
+		
+		if ( (((Input.GetMouseButton (0) == true || Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Return)))
+			&& isPlay == false && gameObject.transform.position.x == -20) ){
+
+			rb.isKinematic = false;
 
 			transform.parent = null;
+
 			isPlay = true;
 
 			if(randInt == 1)

@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: 23ba55f487c28ac488eee9e66a50bc10
   - enabled: 1
+    path: Assets/Scenes/Game Mode.unity
+    guid: cb5272ab3862361438e2aabc4640ee20
+  - enabled: 1
     path: Assets/Scenes/Pong.unity
     guid: 1afb65b353da8cc42a93cd8b99dcf028
   - enabled: 1

@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MenuToCredits : MonoBehaviour {
+
+public class MenuToGamemode : MonoBehaviour {
 
 	void OnMouseDown ()
 	{
@@ -13,6 +14,7 @@ public class MenuToCredits : MonoBehaviour {
 	void OnMouseUp ()
 
 	{
-		SceneManager.LoadScene (3);
+
+		SceneManager.LoadScene (1);
 	}
 }

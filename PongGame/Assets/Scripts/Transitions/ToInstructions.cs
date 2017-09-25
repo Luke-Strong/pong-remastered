@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class ToInstructions : MonoBehaviour {
+public class tOiNSTRUCTIONS : MonoBehaviour {
 
 	void OnMouseDown ()
 	{
@@ -13,6 +13,6 @@ public class ToInstructions : MonoBehaviour {
 	void OnMouseUp ()
 
 	{
-		SceneManager.LoadScene (3);
+		SceneManager.LoadScene (4);
 	}
 }

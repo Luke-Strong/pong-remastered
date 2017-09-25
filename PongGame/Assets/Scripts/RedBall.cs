@@ -30,8 +30,10 @@ public class RedBall : MonoBehaviour {
 
 	void Update ()
 	{
-		print (PlayerScore.playerPoints);
 		isColliding = false;
+
+		Vector3 unit = GetComponent<Rigidbody>().velocity.normalized;
+		GetComponent<Rigidbody>().velocity = unit * 30;
 	}
 
 	void OnTriggerEnter (Collider other) 

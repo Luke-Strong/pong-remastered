@@ -29,7 +29,7 @@ public class PlayerScore : MonoBehaviour {
 ;
 
 		playerScore.text = "" + playerPoints;
-
+		checkWinner ();
 	}
 
 	void OnTriggerEnter (Collider other)
@@ -43,44 +43,18 @@ public class PlayerScore : MonoBehaviour {
 			playerPoints += 3;
 			turn += 1;
 
-			checkWinner (); //Has the player accrued 10 points and won?
-
-
 
 			(Instantiate (ballPref, new Vector3 (paddleObj.transform.position.x + 2, paddleObj.transform.position.y, 0), Quaternion.identity) as GameObject).transform.parent = paddleObj;
 
 			int rand = Random.Range(0,1);
 
-			if (PlayerScore.turn <= 5) 
-				for (int i = 0; i < 1; i++)
-					Instantiate (greenBallPref, new Vector3 (0, Random.Range (-12, 12), 0), Quaternion.identity);
-			else if (PlayerScore.turn <= 10)
-				for (int i = 0; i < 3; i++)
-					Instantiate (greenBallPref, new Vector3 (0, Random.Range(-12, 12), 0), Quaternion.identity);
-			else if (PlayerScore.turn <= 15)
-				for (int i = 0; i < 4; i++)
-					Instantiate (greenBallPref, new Vector3 (0, Random.Range(-12, 12), 0), Quaternion.identity);
-			else if (PlayerScore.turn <= 20)
-				for (int i = 0; i < 5; i++)
-					Instantiate (greenBallPref, new Vector3 (0, Random.Range(-12, 12), 0), Quaternion.identity);
-			else if (PlayerScore.turn <= 25)
-				for (int i = 0; i < 6; i++)
-					Instantiate (greenBallPref, new Vector3 (0, Random.Range(-12, 12), 0), Quaternion.identity);
-			else if (PlayerScore.turn <= 30)
-				for (int i = 0; i < 7; i++)
-					Instantiate (greenBallPref, new Vector3 (0, Random.Range(-12, 12), 0), Quaternion.identity);
-			else if (PlayerScore.turn <= 35)
-				for (int i = 0; i < 8; i++)
-					Instantiate (greenBallPref, new Vector3 (0, Random.Range(-12, 12), 0), Quaternion.identity);
-			else if (PlayerScore.turn <= 40)
-				for (int i = 0; i < 9; i++)
-					Instantiate (greenBallPref, new Vector3 (0, Random.Range(-12, 12), 0), Quaternion.identity);
-			else if (PlayerScore.turn <= 45)
-				for (int i = 0; i < 10; i++)
-					Instantiate (greenBallPref, new Vector3 (0, Random.Range(-12, 12), 0), Quaternion.identity);
-			else if (PlayerScore.turn <= 50)
-				for (int i = 0; i < 11; i++)
-					Instantiate (greenBallPref, new Vector3 (0, Random.Range(-12, 12), 0), Quaternion.identity);
+			for (int i = 0; i < Mathf.Floor(turn/5); i++)
+				Instantiate (greenBallPref, new Vector3 (0, Random.Range (-12, 12), 0), Quaternion.identity);
+
+			for (int i = 0; i < Mathf.Floor(turn/7); i++)
+				Instantiate (redBallPref, new Vector3 (0, Random.Range (-12, 12), 0), Quaternion.identity);
+
+
 
 
 		
@@ -93,12 +67,26 @@ public class PlayerScore : MonoBehaviour {
 
 	void checkWinner()
 	{
-		if (playerPoints >= 50) //10 points to win
-		{
-			result.text = "YOU WIN!";
-			returnMenu.text = "RETURN TO MENU";
-			playAgain.text = "PLAY AGAIN";
-			Time.timeScale = 0;
+		if (NewGame.gameMode == 0) {
+			if (playerPoints >= 50) {
+				result.text = "YOU WIN!";
+				returnMenu.text = "RETURN TO MENU";
+				playAgain.text = "PLAY AGAIN";
+				Time.timeScale = 0;
+
+			}
+				} else if (NewGame.gameMode == 1) {
+					if (EnemyScore.enemyPoints - playerPoints > 20 || Input.GetKeyDown(KeyCode.Escape) ) //10 points to win
+					{
+						result.text = "YOU LOSE!";
+						returnMenu.text = "RETURN TO MENU";
+						playAgain.text = "PLAY AGAIN";
+						Time.timeScale = 0;
+				if (playerPoints > PlayerPrefs.GetInt ("High Score")) {
+					PlayerPrefs.SetInt ("High Score", playerPoints);
+				}					
+			}
+				
 		}
 			
 	}

@@ -30,8 +30,8 @@ public class GreenBall : MonoBehaviour {
 
 	void Update ()
 	{
-
-	
+		Vector3 unit = GetComponent<Rigidbody>().velocity.normalized;
+		GetComponent<Rigidbody>().velocity = unit * 35;
 	}
 
 	void OnTriggerEnter (Collider other) 
