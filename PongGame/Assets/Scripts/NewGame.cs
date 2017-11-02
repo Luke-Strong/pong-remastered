@@ -25,6 +25,7 @@ public class NewGame : MonoBehaviour
 		EnemyScore.enemyPoints = 0; 
 		PlayerScore.turn = 0;
 		PlayerScore.playerPoints = 0; 
+		PlayerScore.redBallHit = false;
 		Time.timeScale = 1; //Unpause game (game was paused in the CheckWinner Function in Player/EnemyScore
 		SceneManager.LoadScene (2);
 	}

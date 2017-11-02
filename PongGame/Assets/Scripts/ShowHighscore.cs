@@ -7,7 +7,7 @@ public class ShowHighscore : MonoBehaviour {
 	public TextMesh highScore;
 	// Use this for initialization
 	void Start () {
-		highScore.text = "Survival Highscore: " + PlayerPrefs.GetInt ("High Score");
+		highScore.text = "Survival Highscore: " + ZPlayerPrefs.GetInt ("High Score");
 	}
 	
 	// Update is called once per frame

@@ -18,6 +18,11 @@ public class EnemyScore : MonoBehaviour {
 	GameObject[] greenBall;
 
 	public static int enemyPoints = 0; 
+
+
+
+
+		
 	void Update () 
 	{
 		ball = GameObject.FindGameObjectWithTag ("Ball");
@@ -36,7 +41,7 @@ public class EnemyScore : MonoBehaviour {
 	}
 
 	void OnTriggerEnter (Collider other) {
-
+		
 
 		if (other.tag == "Ball") 
 		{
@@ -82,8 +87,8 @@ public class EnemyScore : MonoBehaviour {
 						playAgain.text = "PLAY AGAIN";
 						Time.timeScale = 0;
 
-				if (PlayerScore.playerPoints > PlayerPrefs.GetInt ("High Score")) {
-					PlayerPrefs.SetInt ("High Score", PlayerScore.playerPoints);
+				if (PlayerScore.playerPoints > ZPlayerPrefs.GetInt ("High Score")) {
+					ZPlayerPrefs.SetInt ("High Score", PlayerScore.playerPoints);
 				}
 						
 					}

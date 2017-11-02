@@ -22,6 +22,9 @@ public class PlayerScore : MonoBehaviour {
 
 	public static int playerPoints = 0; 
 
+	public static bool redBallHit = false; //Has the player been hit by a red ball this game? For achievement: Seeing Red.
+
+
 
 	void Update () 
 	{
@@ -74,6 +77,9 @@ public class PlayerScore : MonoBehaviour {
 				playAgain.text = "PLAY AGAIN";
 				Time.timeScale = 0;
 
+				if (redBallHit == false)
+					ZPlayerPrefs.SetInt ("Seeing Red", 1);
+
 			}
 				} else if (NewGame.gameMode == 1) {
 					if (EnemyScore.enemyPoints - playerPoints > 20 || Input.GetKeyDown(KeyCode.Escape) ) //10 points to win
@@ -82,8 +88,8 @@ public class PlayerScore : MonoBehaviour {
 						returnMenu.text = "RETURN TO MENU";
 						playAgain.text = "PLAY AGAIN";
 						Time.timeScale = 0;
-				if (playerPoints > PlayerPrefs.GetInt ("High Score")) {
-					PlayerPrefs.SetInt ("High Score", playerPoints);
+				if (playerPoints > ZPlayerPrefs.GetInt ("High Score")) {
+					ZPlayerPrefs.SetInt ("High Score", playerPoints);
 				}					
 			}
 				

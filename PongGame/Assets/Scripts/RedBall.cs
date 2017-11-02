@@ -5,7 +5,6 @@ using UnityEngine;
 public class RedBall : MonoBehaviour {
 
 	public float ballVelocity = 1000;
-
 	Rigidbody rb;
 	int rand;
 	bool isColliding = false;
@@ -33,7 +32,7 @@ public class RedBall : MonoBehaviour {
 		isColliding = false;
 
 		Vector3 unit = GetComponent<Rigidbody>().velocity.normalized;
-		GetComponent<Rigidbody>().velocity = unit * 30;
+		GetComponent<Rigidbody>().velocity = unit * 22;
 	}
 
 	void OnTriggerEnter (Collider other) 
@@ -49,6 +48,7 @@ public class RedBall : MonoBehaviour {
 		isColliding = true;
 		if (other.tag == "Paddle") {
 			Destroy (gameObject);
+			PlayerScore.redBallHit = true;
 			if (PlayerScore.playerPoints > 0) {
 				PlayerScore.playerPoints -= 1;
 			}
